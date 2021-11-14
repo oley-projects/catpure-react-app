@@ -1,3 +1,3 @@
-# Getting Started with React
+# Catpure React Project
 
 Catpure Project
