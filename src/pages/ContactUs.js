@@ -1,6 +1,8 @@
 const ContactUs = () => {
     return(
-      <h2>Contact Us</h2>
+      <div>
+        <h2>Contact Us</h2>
+      </div>
     );
   };
   
