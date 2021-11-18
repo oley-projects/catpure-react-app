@@ -1,22 +1,23 @@
 import home1 from "../img/home1.png";
-import styled from "styled-components";
-import { About, Descriptiom, Image, Hide} from "../styles";
+import { About, Descriptiom, Image, Hide } from "../styles";
+// Framer motion
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return(
     <About>
       <Descriptiom>
-        <div className="title">
+        <motion.div className="title">
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <h2>your <span>dreams</span></h2>
+            <motion.h2>your <span>dreams</span></motion.h2>
           </Hide>
           <Hide>
-            <h2>come true</h2>
+            <motion.h2>come true</motion.h2>
           </Hide>
-        </div>
+        </motion.div>
         <p>
           Contact us for any photo or video ideas that you have. 
           We are professionals with amazing skills to help you
