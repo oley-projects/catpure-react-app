@@ -3,6 +3,7 @@ import { About, Descriptiom, Image, Hide } from "../styles";
 // Framer motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, imageAnim } from "../animation";
+import Wave from "./Wave";
 
 const AboutSection = () => {
   return(
@@ -28,6 +29,7 @@ const AboutSection = () => {
       <Image>
         <motion.img variants={imageAnim} src={home1} alt="home" />
       </Image>
+      <Wave />
     </About>
   );
 };
