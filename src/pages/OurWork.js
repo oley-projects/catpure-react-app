@@ -73,6 +73,9 @@ const Work = styled(motion.div)`
     color: #ccc;
     text-align: center;
   }
+  @media (max-width: 1300px) {
+    padding: 1rem 2rem;
+  }
 `;
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;

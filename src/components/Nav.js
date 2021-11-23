@@ -42,6 +42,22 @@ const StyledNav = styled.nav`
     font-family: "Lobster", cursive;
     font-weight: lighter;
   }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 0;
+    ul {
+      padding: 1.5rem;
+      justify-content: space-around;
+      width: 100%;
+      li {
+        padding: 0;
+      }
+    }
+    .logo {
+      display: inline-block;
+      padding: 1rem 0;
+    }
+  }
 `;
 
 export default Nav;
