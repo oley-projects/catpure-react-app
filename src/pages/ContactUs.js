@@ -1,18 +1,62 @@
 // Animation
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import { pageAnimation, titleAnim } from "../animation";
+import styled from "styled-components";
 
 const ContactUs = () => {
-    return(
-      <motion.div
-        variants={pageAnimation}
-        initial="hidden"
-        animate="show"
-        exit="exit"
-      >
-        <h2>Contact Us</h2>
-      </motion.div>
-    );
-  };
-  
-  export default ContactUs;
+  return(
+    <StyledContact
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
+      <Hide>
+        <Title>
+          <motion.h2 variants={titleAnim}>Get In Touch</motion.h2>
+        </Title>
+      </Hide>
+      <div>
+        <Social variants={titleAnim}>
+          <Circle />
+          <h2>Send A Message</h2>
+        </Social>
+        <Social variants={titleAnim}>
+          <Circle />
+          <h2>Send An Email</h2>
+        </Social>
+        <Social variants={titleAnim}>
+          <Circle />
+          <h2>Social Contacts</h2>
+        </Social>
+      </div>
+    </StyledContact>
+  );
+};
+
+const StyledContact = styled(motion.div)`
+  padding: 5rem 10rem;
+  min-height: 90vh;
+  color: #dadada;
+`;
+const Title = styled.div`
+  margin-bottom: 5rem;
+`;
+const Hide = styled.div`
+  overflow: hidden;
+`;
+const Circle = styled.div`
+  border-radius: 50%;
+  background-color: #dadada;
+  width: 3rem;
+  height: 3rem;
+`;
+const Social = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  h2 {
+    margin: 2rem;
+  }
+`;
+
+export default ContactUs;
